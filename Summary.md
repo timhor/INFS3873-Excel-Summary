@@ -1,5 +1,3 @@
-# Functions
-
 ## Basic Functions
 
 | Formula                     | Action                                                              |
