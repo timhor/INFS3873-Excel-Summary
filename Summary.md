@@ -44,3 +44,32 @@ These functions are useful for finding specific data in a spreadsheet.
 | `=PERCENTILE.EXC(array, k)` | Compute the *k*th percentile, exclusive                 |
 | `=QUARTILE.INC(array, q)`   | Compute the *q*th quartile, inclusive (_q_ from 0 to 4) |
 | `=QUARTILE.EXC(array, q)`   | Compute the *q*th quartile, exclusive (_q_ from 1 to 3) |
+
+### Measures of Location
+
+| Formula                                      | Action                                                           |
+| -------------------------------------------- | ---------------------------------------------------------------- |
+| `=AVERAGE(data_range)`                       | Compute the mean of all values in `data_range`                   |
+| `=MEDIAN(data_range)`                        | Compute the median of all values in `data_range`                 |
+| `=MODE.SNGL`                                 | Compute the mode of all values in `data_range` (unimodal case)   |
+| `=MODE.MULT`                                 | Compute the mode of all values in `data_range` (multimodal case) |
+| `=AVERAGE(MIN(data_range), MAX(data_range))` | Compute the midrange – average of greatest and least values      |
+
+### Measures of Dispersion
+
+| Formula                              | Action                                                                          |
+| ------------------------------------ | ------------------------------------------------------------------------------- |
+| `=MAX(data_range) - MIN(data_range)` | Compute the range of all values in `data_range`                                 |
+| `=QUARTILE.INC(data_range)`          | Compute the interquartile range of all values in `data_range`                   |
+| `=VAR.P(data_range)`                 | Compute the variance of all values in `data_range` for a _population_           |
+| `=VAR.S(data_range)`                 | Compute the variance of all values in `data_range` for a _sample_               |
+| `=STDEV.P(data_range)`               | Compute the standard deviation of all values in `data_range` for a _population_ |
+| `=STDEV.S(data_range)`               | Compute the standard deviation of all values in `data_range` for a _sample_     |
+
+### Probability Distributions
+
+| Formula                                  | Action                                                   |
+| ---------------------------------------- | -------------------------------------------------------- |
+| `=NORM.DIST(x, mean, stdev, cumulative)` | Compute probability according to the normal distribution |
+| `=NORM.INV(probability, mean, stdev)`    | Given a (cumulative) probability _F(x)_, find _x_        |
+| `=NORM.S.DIST(z, cumulative)`            | Return the standard normal distribution                  |
