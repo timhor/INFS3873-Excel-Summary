@@ -64,6 +64,13 @@ These functions are useful for finding specific data in a spreadsheet.
 | `=STDEV.P(data_range)`               | Compute the standard deviation of all values in `data_range` for a _population_ |
 | `=STDEV.S(data_range)`               | Compute the standard deviation of all values in `data_range` for a _sample_     |
 
+### Measures of Shape
+
+| Formula       | Action                                        |
+| ------------- | --------------------------------------------- |
+| `=SKEW(data)` | Compute the coefficient of skewness of `data` |
+| `=KURT(data)` | Compute the coefficient of kurtosis of `data` |
+
 ### Probability Distributions
 
 | Formula                                  | Action                                                   |
