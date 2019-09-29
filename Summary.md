@@ -71,6 +71,14 @@ These functions are useful for finding specific data in a spreadsheet.
 | `=SKEW(data)` | Compute the coefficient of skewness of `data` |
 | `=KURT(data)` | Compute the coefficient of kurtosis of `data` |
 
+### Measures of Association
+
+| Formula                         | Action                                    |
+| ------------------------------- | ----------------------------------------- |
+| `=COVARIANCE.P(array1, array2)` | Compute the covariance for a _population_ |
+| `=COVARIANCE.S(array1, array2)` | Compute the covariance for a _sample_     |
+| `=CORREL(array1, array2)`       | Compute the correlation                   |
+
 ### Probability Distributions
 
 | Formula                                  | Action                                                   |
