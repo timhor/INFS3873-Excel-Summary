@@ -86,3 +86,16 @@ These functions are useful for finding specific data in a spreadsheet.
 | `=NORM.DIST(x, mean, stdev, cumulative)` | Compute probability according to the normal distribution |
 | `=NORM.INV(probability, mean, stdev)`    | Given a (cumulative) probability _F(x)_, find _x_        |
 | `=NORM.S.DIST(z, cumulative)`            | Return the standard normal distribution                  |
+
+### Confidence intervals
+
+| Formula                                   | Action                                                                                                           |
+| ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| `=CONFIDENCE.NORM(alpha, stdev, size)`    | Compute a confidence interval with known standard deviation: _z_<sub>_&alpha;_/2</sub>(_&sigma;_/&radic;n)       |
+| `=CONFIDENCE.T(alpha, stdev, size)`       | Compute a confidence interval with unknown standard deviation: _t_<sub>_&alpha;_/2,n-1</sub>(_&sigma;_/&radic;n) |
+| `=T.INV(alpha, df)`                       | Compute the critical value for a one-tailed test                                                                 |
+| `=T.INV.2T(alpha, df)`                    | Compute the critical value for a two-tailed test                                                                 |
+| `=T.DIST(test_statistic, df, cumulative)` | Compute the _p_-value for a one-tailed test                                                                      |
+| `=T.DIST.2T(test_statistic, df)`          | Compute the _p_-value for a two-tailed test                                                                      |
+
+- No need to do `n-1` for `size` in t-distribution
